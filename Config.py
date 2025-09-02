@@ -9,8 +9,8 @@ class Configs:
     TIMEFRAME = "1h"
 
 
-    API_KEY = "dgdMpfRtozHtm8jgpgWfz5T21jnNoF2y954jTeZhRj9d95YpLwsYFfwj0CGq9eM4"
-    SECRET_KEY = "LtTIVxvrMftFjyWulcJynBagHq6klrLLx2RBRjW8epS0DDZLJMbBGRkZvoIcKBX7"
+    API_KEY = ""
+    SECRET_KEY = ""
     SANDBOX = True
 
     INIT_BALANCE = 10000
