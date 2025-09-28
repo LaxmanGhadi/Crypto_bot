@@ -1,7 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
-from FeatureExtract import Features
+from Pipeline.FeatureExtract import Features
 from Config import Configs
 
 
