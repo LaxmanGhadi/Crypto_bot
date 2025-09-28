@@ -7,7 +7,7 @@ from GetData import Manage_data
 from Manage_orders import ExecutionEngine
 from Logger import TradeLogger
 from Visualizer import Visualizerr
-from Config import Configs
+from config import Configs
 import pickle
 from FeatureExtract import Features
 import pandas as pd
@@ -94,13 +94,13 @@ class CryptoTradingBot:
                 # Display current status
                 self.display_status(df, self.signal, current_price)
                 
-                # # Check if we have enough trades for metrics
-                # if len(self.execution_engine.trades) >= Configs.MIN_TRADES_FOR_METRICS:
-                #     metrics = self.logger.calculate_metrics(self.execution_engine.trades)
-                #     print(f"\nCurrent Metrics:")
-                #     print(f"Win Rate: {metrics['win_rate']:.1f}%")
-                #     print(f"Total P&L: ${metrics['total_pnl']:.2f}")
-                #     print(f"Trades: {metrics['total_trades']}")
+                # Check if we have enough trades for metrics
+                if len(self.execution_engine.trades) >= Configs.MIN_TRADES_FOR_METRICS:
+                    metrics = self.logger.calculate_metrics(self.execution_engine.trades)
+                    print(f"\nCurrent Metrics:")
+                    print(f"Win Rate: {metrics['win_rate']:.1f}%")
+                    print(f"Total P&L: ${metrics['total_pnl']:.2f}")
+                    print(f"Trades: {metrics['total_trades']}")
                 
                 await asyncio.sleep(Configs.UPDATE_INTERVAL)
                 

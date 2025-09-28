@@ -4,7 +4,7 @@ import numpy as np
 import asyncio
 import time
 from datetime import datetime
-from Config import Configs
+from config import Configs
 
 class Manage_data:
     def __init__(self):

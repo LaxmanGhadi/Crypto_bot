@@ -2,7 +2,7 @@ import time
 from datetime import datetime
 from enum import Enum
 from GetData import Manage_data
-from Config import Configs
+from config import Configs
 
 class OrderStatus(Enum):
     PENDING = "pending"
