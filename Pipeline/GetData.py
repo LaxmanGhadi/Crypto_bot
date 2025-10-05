@@ -22,7 +22,7 @@ class Manage_data:
         })
         return exchange      
     
-    def fetch_ohlcv(self, limit =400):
+    def fetch_ohlcv(self, limit =500):
         try:
             ohlcv = self.exchange.fetch_ohlcv(
                 "BTC/USDT",
