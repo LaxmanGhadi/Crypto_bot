@@ -6,7 +6,7 @@ from GetData import Manage_data
 # from strategy import TradingStrategy get model here
 from Manage_orders import ExecutionEngine
 from Logger import TradeLogger
-from Visualizer import Visualizerr
+from Pipeline.Visualizer import Visualizerr
 from config import Configs
 import pickle
 from FeatureExtract import Features
