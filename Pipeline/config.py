@@ -1,6 +1,10 @@
 
 import os
 from dotenv import load_dotenv
+from dotenv import load_dotenv
+env = load_dotenv(dotenv_path=r"C:\Users\Com\OneDrive\Documents\GitHub\Crypto_bot\.env")
+
+
 
 load_dotenv()
 class Configs:
@@ -9,8 +13,8 @@ class Configs:
     TIMEFRAME = "1h"
     FEAR_API =  "3f9744d167msh30e7ae02893acbcp17b3c2jsn2232770bcfe8",
     Dominance_API =  '3ba2ac07-2928-4613-9357-97957983e1ac'
-    API_KEY = "Y1gODe9ZnI05mzleN0mBV96I84Owdo3g8e4e5uMxg53z9TS3XKNYkIjUBcRRvPsO"
-    SECRET_KEY = "OIeE07DT39d57gKOpeBPbf5Ua0IDIDEUP8hT6YNtadXmDMx0isj8ru62X8J0HXWm"
+    API_KEY = os.getenv('BINANCE_API_KEY')
+    SECRET_KEY =os.getenv('BINANCE_SECRET_KEY')
     SANDBOX = True
 
     INIT_BALANCE = 10000
