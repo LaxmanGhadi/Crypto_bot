@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 from config import Configs
 
+
 class Manage_data:
     def __init__(self):
         self.exchange = self._init_exchange()
