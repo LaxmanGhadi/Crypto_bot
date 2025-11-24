@@ -11,8 +11,8 @@ class Configs:
     EXCHANGE  = "binance"
     SYMBOL = "BTC/USDT"
     TIMEFRAME = "1h"
-    FEAR_API =  "3f9744d167msh30e7ae02893acbcp17b3c2jsn2232770bcfe8",
-    Dominance_API =  '3ba2ac07-2928-4613-9357-97957983e1ac'
+    # FEAR_API =  "3f9744d167msh30e7ae02893acbcp17b3c2jsn2232770bcfe8",
+    # Dominance_API =  '3ba2ac07-2928-4613-9357-97957983e1ac'
     API_KEY = os.getenv('BINANCE_API_KEY')
     SECRET_KEY =os.getenv('BINANCE_SECRET_KEY')
     SANDBOX = True

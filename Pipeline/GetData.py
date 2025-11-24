@@ -4,7 +4,7 @@ import numpy as np
 import asyncio
 import time
 from datetime import datetime
-from config import Configs
+from .config import Configs
 
 
 class Manage_data:
