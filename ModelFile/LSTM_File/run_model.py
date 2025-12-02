@@ -113,7 +113,7 @@ def create_sequences(X, time_steps=60):
 importlib.reload(GetData)
 data  = GetData.Manage_data()
 live_data  =  data.fetch_ohlcv(limit=500)
-print(live_data.tail())
+
 live_data['timestamp'] = live_data.index
 
 # Transform LIVE DATA to data similar to local data
